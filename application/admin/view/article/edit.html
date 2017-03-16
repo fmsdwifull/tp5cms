@@ -1,0 +1,90 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Article/index')}">文章管理</a><span class="crumb-step">&gt;</span><span>修改文章</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Article/update')}" method="post" id="myform" name="myform" enctype="multipart/form-data" >
+                 <input type="hidden" name="id" value="{$result.id}" />
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                         <tr>
+                                <th>栏目：</th>
+                                <td>
+                                    {volist name='list' id='vo'}
+                                    <input name="catid" onClick="chooseOne(this)" {if condition="$vo['catid'] eq $result['catid']"}checked="checked"{/if} value="{$vo.catid}" type="checkbox">&nbsp;{$vo.catname}
+                                    {/volist}
+                                    </td>
+                            </tr>
+                                 <script>
+                                 function chooseOne(catid){ 
+								//先取得同name的chekcBox的集合物件 
+								var obj = document.getElementsByName("catid"); 
+								for (i=0; i<obj.length; i++){ 
+								//判斷obj集合中的i元素是否為cb，若否則表示未被點選 
+								if (obj[i]!=catid) obj[i].checked = false; 
+								//若要至少勾選一個的話，則把上面那行else拿掉，換用下面那行 
+								else obj[i].checked = true; 
+								} 
+								} 
+                                 
+                                 </script>
+                            <tr>
+                                <th>标题：</th>
+                                <td>
+                                    <input class="common-text" id="title" name="title" style=" width:800px;" onBlur="$.post('{:url('Article/get_keywords')}?number=3&sid='+Math.random()*5, {data:$('#title').val()}, function(data){if(data && $('#keywords').val()=='') $('#keywords').val(data); })"  value="{$result.title}" type="text">
+                                </td>
+                            </tr>
+                             <tr>
+                                <th>关键词：</th>
+                                <td>
+                                    <input class="common-text" id="keywords" name="keywords" style=" width:400px;"  value="{$result.keywords}" type="text">多关键词之间用空格或者“,”隔开
+                                </td>
+                            </tr>
+                                <tr>
+                                <th>缩略图：</th>
+                                <td>
+                                 <div style="margin-top:10px;">
+                                    <div id="uploadimg">
+                                        <div id="fileList" class="uploader-list" style="width: 100%; overflow: hidden;"></div>
+                                        <div id="imgPicker">选择图片</div>
+                                    </div>
+                                </div>
+                                <input id="select_picture" hidden="hidden" type="text" value="{$result.thumb}" name="thumb"/>
+                                {include file="public:upload" /}
+                                </td>
+                            </tr>
+                            {notempty name="result.thumb"}
+                              <tr>
+                               <th></th>
+                              <td><img src="{$result.thumb}" style="max-width:400px; max-height:100px;" /></td>
+                              </tr>
+                              {/notempty}
+                               <tr>
+                                <th>描述：</th>
+                                <td><textarea name="description" class="common-textarea" id="description"  style="width:800px; height:100px;">{$result.description}</textarea></td>
+                            </tr>
+                            <tr>
+                                <th>内容：</th>
+                                <td style="padding-top:10px;"><script type="text/plain" id="myEditor"  style=" width:805px;height:200px;">{$result.content}</script></td>
+                            </tr>
+                            {include file="public:ueditor" /}
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10"  value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

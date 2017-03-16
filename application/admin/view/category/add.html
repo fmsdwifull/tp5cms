@@ -1,0 +1,145 @@
+{include file="Public:header" /}
+<style>
+.admin_tab{background:#f8f8f8;overflow:hidden;border:1px #d2d2d2 solid;margin-bottom:8px;}
+.admin_tab li{float:left;height:40px;line-height:40px;border-right:1px #f2f2f2 solid;}
+.admin_tab li:last-child{border:none;}
+.admin_tab li a{display:block;padding:0 20px;color:#333;font-size:12px;cursor:pointer;}
+.admin_tab li a.active{background:white;font-weight:bold;border-top:1px #428bca solid;color:#428bca;}
+.admin_tab_cont{display:none;margin:5px 0;overflow:hidden;}
+</style>
+<script type="text/javascript">
+$(function(){
+ $(".admin_tab li a").click(function(){
+		  var liindex = $(".admin_tab li a").index(this);
+		  $(this).addClass("active").parent().siblings().find("a").removeClass("active");
+		  $(".admin_tab_cont").eq(liindex).fadeIn(150).siblings(".admin_tab_cont").hide();
+		 });
+		 
+	})
+</script>
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span>添加栏目</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Category/insert')}" method="post"  id="form" enctype="multipart/form-data" >
+                    <ul class="admin_tab">
+                    <li><a class="active">常规选项</a></li>
+                    <li><a>高级选项</a></li>
+                    </ul>
+                    <div class="admin_tab_cont" style="display:block;">
+                    
+                    <table class="insert-tab" width="100%">
+                        <tbody><tr>
+                            <th width="120">上级栏目：</th>
+                            <td>
+                                <select name="pid">
+                                    <option value="0">顶级栏目</option>
+                                    {volist name='list' id='vo'}
+                                    {between name="vo.level" value="0,8"}<option value="{$vo.catid}" {if condition="$vo['catid'] eq $catid"}selected="selected"{/if} >{:str_repeat("└─",$vo['level'])}{$vo.catname}</option>{/between}
+                                    {/volist}
+                                </select>
+                            </td>
+                        </tr>
+                            <tr>
+                                <th>栏目名称：</th>
+                                <td>
+                                    <input class="common-text "  name="catname" size="50"  type="text">
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                <th>隐藏栏目：</th>
+                                <td><input type="radio" name="ishidden" value="1" >隐藏&nbsp;&nbsp;&nbsp; <input type="radio" name="ishidden" value="0" checked="checked" >显示  </td>
+                            </tr>
+                             <tr>
+                                <th>封面图片：</th>
+                                <td>
+                                  <div style=" margin-top:10px;">
+                                    <div id="uploadimg">
+                                        <div id="fileList" class="uploader-list" style="width: 100%; overflow: hidden;"></div>
+                                        <div id="imgPicker">选择图片</div>
+                                    </div>
+                                   </div>
+                                   <input id="select_picture" hidden="hidden" type="text" name="thumb"/>
+                                   {include file="public:upload" /}
+                                </td>
+                            </tr>
+
+                             <tr>
+                                <th>栏目属性：</th>
+                                <td><input type="radio" name="ispart" value="0" checked="checked" >最终列表（允许发表文档） <input type="radio" name="ispart" value="1" >频道封面（不允许发表文档） </td>
+                            </tr>
+                             <tr>
+                                <th>封面模板：</th>
+                                <td>
+                                    <input class="common-text"  name="category" size="50"  value="category.html"  type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>列表模板：</th>
+                                <td>
+                                    <input class="common-text"  name="list" size="50"  value="list.html"  type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>文章模板：</th>
+                                <td>
+                                    <input class="common-text"  name="show" size="50"  value="show.html"  type="text">
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                        </table>
+                    
+                    </div>
+                   
+                    
+                     <div class="admin_tab_cont">
+                    
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                         <tr>
+                                <th>关键词：</th>
+                                <td>
+                                    <input class="common-text "  name="keywords" size="110"  type="text">
+                                </td>
+                            </tr>
+                             <tr>
+                                <th>描述：</th>
+                                <td><textarea name="description" class="common-textarea"   style="width:800px; height:100px;"></textarea></td>
+                            </tr>
+                            
+                            <tr>
+                                <th>内容：</th>
+                                <td style="padding-top:10px;"><script type="text/plain" id="myEditor"  style=" width:805px;height:200px;"></script></td>
+                            </tr>
+                            {include file="public:ueditor" /}
+                          
+                        </tbody>
+                        
+                        </table>
+                    
+                    </div>
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                        </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

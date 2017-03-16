@@ -1,0 +1,499 @@
+[ 2017-03-16T11:00:17+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/common/cache.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/common/cache.html [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,616.69kb] [文件加载：36]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'common',
+    2 => 'cache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Common->cache[ D:\wamp\www\tp5fivecms\application\admin\controller\Common.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:18+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/category/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/category/index.html [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：2,520.98kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/common/cache.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\category\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:20+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/system/set.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/system/set.html [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：2,382.05kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ D:\wamp\www\tp5fivecms\application\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\system\set.html [ array (
+  0 => 'detail',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:22+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/attachment/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/attachment/index.html [运行时间：0.112007s][吞吐率：8.93req/s] [内存消耗：2,592.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'attachment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Attachment->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Attachment.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\attachment\index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:24+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/attachment/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/attachment/index.html [运行时间：0.174010s][吞吐率：5.75req/s] [内存消耗：2,416.38kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'attachment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/attachment/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Attachment->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Attachment.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\attachment\index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:27+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/tag/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/tag/index.html [运行时间：0.423024s][吞吐率：2.36req/s] [内存消耗：2,610.53kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'tag',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/attachment/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Tag->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Tag.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\tag\index.html [ array (
+  0 => 'tag_list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:29+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/tag/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/tag/index.html [运行时间：0.104006s][吞吐率：9.61req/s] [内存消耗：2,434.04kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'tag',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/tag/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Tag->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Tag.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\tag\index.html [ array (
+  0 => 'tag_list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:30+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/category/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/category/index.html [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：2,338.96kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/tag/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\category\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:32+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/article/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/article/index.html [运行时间：0.098006s][吞吐率：10.20req/s] [内存消耗：2,628.21kb] [文件加载：47]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\article\index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:34+08:00 ] 127.0.0.1 127.0.0.1 POST /tp5fivecms/admin.php/article/status.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/article/status.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,526.48kb] [文件加载：34]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'status',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1:8080',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/article/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->status[ D:\wamp\www\tp5fivecms\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-16T11:00:35+08:00 ] 127.0.0.1 127.0.0.1 GET /tp5fivecms/admin.php/article/index.html
+[ log ] 127.0.0.1:8080/tp5fivecms/admin.php/article/index.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,446.30kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\www\tp5fivecms\thinkphp\lang\zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1:8080',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1:8080/tp5fivecms/admin.php/category/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '_ga=GA1.1.1134810092.1487141773; PHPSESSID=u9b1fpp2drmlei6236lt9e5pu0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\wamp\www\tp5fivecms\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\tp5fivecms/application/admin\view\article\index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

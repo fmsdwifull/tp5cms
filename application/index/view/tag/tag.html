@@ -1,0 +1,79 @@
+{include file="public:header" /}
+   <!---banner-->
+ <div class="wqp-banner swiper-container-horizontal">
+        <ul class="swiper-wrapper">
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner5.jpg" mobile-img="__PUBLIC__/2016/images/banner5.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner5.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner6.jpg" mobile-img="__PUBLIC__/2016/images/banner6.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner6.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner7.jpg" mobile-img="__PUBLIC__/2016/images/banner7.jpg">
+                <a href="javascript:;">
+                    <img src="__PUBLIC__/2016/images/banner7.jpg">
+                </a>
+
+            </li>
+            
+        </ul>
+        <div class="wqp-bannerbtn"></div>
+    </div>
+    <!--banner end-->
+   
+    
+    <!--content-->
+    <div class="web">
+        <div class="wwimpor">
+            <!--新闻列表start-->
+            {volist name='article_list' id='vo'}
+            <a href="{$vo.url}">
+                <dl class="clearfix">
+                    <dt class="col-xs-12 col-sm-27">
+                        <img src="{$vo.thumb}" /></dt>
+                    <dd class="col-xs-12 col-sm-73">
+                        <div class="wwimporword">
+                            <h3>{$vo.title}</h3>
+                            <p>{$vo.description}</p>
+                            <span>查看详情</span>
+                        </div>
+                        <div class="wwnewstime">
+                            <span>{$vo.inputtime|date="d",###}</span>
+                            <p>{$vo.inputtime|date="Y-m",###}</p>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+             {/volist}
+             {$page}
+            
+           
+            <!--新闻列表end-->
+        </div>
+    </div>
+    <!--content-->
+
+<!--footer-->
+
+{include file="public:footer" /}
+
+<!---footer end-->
+
+<div class="rightmenuin">
+  <div class="ico-box ico06 backtop"></div>
+</div>
+
+<script src="__PUBLIC__/2016/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/2016/js/idangerous.swiper.min.js"></script>
+<script src="__PUBLIC__/2016/js/layout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">文章管理</span></div>
+        </div>
+        <div class="search-wrap">
+            <div class="search-content">
+                <form action="{:url('Article/index')}" method="get">
+                    <table class="search-tab">
+                        <tr>
+                            <th width="120">选择栏目:</th>
+                            <td>
+                                 <select name="catid">
+                                    <option value="0">选择栏目</option>
+                                    {volist name='cate_list' id='vo'}
+                                    <option value="{$vo.catid}" {if condition="$catid"}selected="selected"{/if} {if condition="$vo['ispart'] eq 1"} disabled="disabled"{/if}>{:str_repeat("└─",$vo['level'])}{$vo.catname}</option>
+                                    {/volist}
+                                </select>
+                            </td>
+                            <th width="70">关键字:</th>
+                            <td><input class="common-text" placeholder="关键字" name="q" value="{$q?$q:''}"  type="text"></td>
+                            <td><input class="btn btn-primary btn2" value="查询" type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:url('Article/add')}"><i class="icon-font"></i>添加文章</a>
+                        <a onclick="myform.action='{:url('Article/delete')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        <a onclick="myform.action='{:url('Article/listorder')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
+                        <a onclick="myform.action='{:url('Article/status')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>更新状态</a>
+                        <a onClick="confirm_delete()" href="{:url('Article/deleteAll')}"><i class="icon-font"></i>删除所有文章</a>
+                    </div>
+                   <script language="javascript">
+					function confirm_delete() {
+						if (!confirm("确认要删除所有文章？")) {
+							window.event.returnValue = false;
+						}
+					}
+				   </script>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="20"><input class="allChoose" id="check_box" onclick="selectall('id[]');" type="checkbox"></th>
+                            <th width="60">排序</th>
+                            <th>标题</th>
+                            <th width="50">状态</th>
+                            <th width="200">栏目</th>
+                            <th width="140">时间</th>
+                            <th width="60">操作</th>
+                        </tr>
+                        {volist name='article_list' id='vo'}
+                        <tr align="center">
+                            <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td>
+                            <td>
+                               <input class="common-input sort-input" name="listorder[{$vo.id}]" value="{$vo.listorder}" type="text">
+                            </td>
+                            <td align="left"><a target="_blank" href="{$vo.url}" title="{$vo.title}">{$q?str_replace($q, '<font color=red>'.$q.'</font>', $vo['title']):$vo['title']}</a>
+                            </td>
+                            <td>{$vo.status?'未审核':'已审核'}</td>
+                            <td>{:get_catname($vo.catid)}</td>
+                            <td>{$vo.inputtime|date="Y-m-d H:i:s",###}</td>
+                            <td>
+                                <a class="link-update" href="{:url('Article/edit',['id'=>$vo['id']])}">修改</a>
+                                <a class="link-del" href="{:url('Article/delete',['id'=>$vo['id']])}">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        <tr><td colspan="9">{$page}</td></tr>
+                    </table>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

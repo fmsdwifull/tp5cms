@@ -1,0 +1,75 @@
+{include file="public:header" /}
+<!---banner-->
+  <div class="wqp-banner swiper-container-horizontal">
+        <ul class="swiper-wrapper">
+            
+           
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner5.jpg" mobile-img="__PUBLIC__/2016/images/banner5.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner5.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner6.jpg" mobile-img="__PUBLIC__/2016/images/banner6.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner6.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner7.jpg" mobile-img="__PUBLIC__/2016/images/banner7.jpg">
+                <a href="javascript:;">
+                    <img src="__PUBLIC__/2016/images/banner7.jpg">
+                </a>
+
+            </li>
+            
+        </ul>
+        <div class="wqp-bannerbtn"></div>
+    </div>
+    <!--banner end-->
+   
+    
+    <!--content-->
+    <div class="web">
+        <div class="wwnewsdeta">
+            <div class="commonDetailedtitle">
+                <h3>TAG标签</h3>
+            </div>
+            <div class="commonDetailedContents">
+           {taglist name='vo' num='40'}
+           <a href="{:url('Tag/show',['tag'=>urlencode($vo['tag'])])}" class="t{:rand(1,5)}">{$vo.tag}</a>&nbsp;
+           {/taglist}
+           <style>
+           .t1{ color:#30C; font-size:16px; font-weight:bold;}
+		   .t2{ color: #033; font-size:12px;}
+		   .t3{ color: #600; font-size:20px;}
+		   .t4{ color: #0FF; font-size:14px;}
+		   .t5{ color: #F03; font-size:18px;}
+           </style>
+            </div>
+            <div class="commonDetailedContentsfoot">
+                <p><a href="javascript:history.go(-1);">返回</a></p>
+                
+            </div>
+        </div>
+    </div>
+    <!--content-->
+
+<!--footer-->
+
+{include file="public:footer" /}
+
+<!---footer end-->
+
+<div class="rightmenuin">
+  <div class="ico-box ico06 backtop"></div>
+</div>
+
+<script src="__PUBLIC__/2016/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/2016/js/idangerous.swiper.min.js"></script>
+<script src="__PUBLIC__/2016/js/layout.js"></script>
+
+</body>
+</html>

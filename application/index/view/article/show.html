@@ -1,0 +1,88 @@
+{include file="public:header" /}
+<!---banner-->
+  <div class="wqp-banner swiper-container-horizontal">
+        <ul class="swiper-wrapper">
+            
+           
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner5.jpg" mobile-img="__PUBLIC__/2016/images/banner5.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner5.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner6.jpg" mobile-img="__PUBLIC__/2016/images/banner6.jpg">
+                <a href="#">
+                    <img src="__PUBLIC__/2016/images/banner6.jpg">
+                </a>
+
+            </li>
+            
+            <li class="swiper-slide" pc-img="__PUBLIC__/2016/images/banner7.jpg" mobile-img="__PUBLIC__/2016/images/banner7.jpg">
+                <a href="javascript:;">
+                    <img src="__PUBLIC__/2016/images/banner7.jpg">
+                </a>
+
+            </li>
+            
+        </ul>
+        <div class="wqp-bannerbtn"></div>
+    </div>
+    <!--banner end-->
+   
+    <!--二级导航-->
+    <div class="wqp-nav hidden-sm">
+        <div class="commonweb wqp-nav-item">
+           
+            {volist name='subcate' id='vo'}
+          <a href="{$vo.url}" {if condition="$vo.catid eq $category.catid"}class="cur"{/if}>{$vo.catname}</a>
+            {/volist}
+            
+        </div>
+    </div>
+
+    <!--content-->
+    <div class="web">
+        <div class="wwnewsdeta">
+            <div class="commonDetailedtitle">
+                <h3>{$article.title}</h3>
+                <div class="commonDetailedtitleTimeAuthor">
+                    <span>{$article.inputtime|date="Y-m-d",###}  点击：{$article.hits}</span><div class="bdsharebuttonbox" style="display: inline;"><a href="#" class="bds_more" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" data-cmd="more"></a><a href="#" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" style="display: inline-block; margin: 0px 0px 0px 5px; float: none;" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                </div>
+            </div>
+            <div class="commonDetailedContents">
+            {$article.content}<br />
+            关键词：
+            {volist name='keywords' id='vo'}
+            <a href="__ROOT__/index.php/Tag/show.html?tag={$vo|urlencode}">{$vo}</a>
+            {/volist}  
+            </div>
+            <div class="commonDetailedContentsfoot">
+                <p><a href="javascript:history.go(-1);">返回</a></p>
+                <dl class="clearfix">
+                     
+                    <dd><a href="{$previous_page.url}"><span>上一篇</span>{$previous_page.title}</a></dd>
+                    <dd><a href="{$next_page.url}"><span>下一篇</span>{$next_page.title}</a></dd>
+                    
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--content-->
+
+<!--footer-->
+
+{include file="public:footer" /}
+
+<!---footer end-->
+
+<div class="rightmenuin">
+  <div class="ico-box ico06 backtop"></div>
+</div>
+
+<script src="__PUBLIC__/2016/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/2016/js/idangerous.swiper.min.js"></script>
+<script src="__PUBLIC__/2016/js/layout.js"></script>
+
+</body>
+</html>

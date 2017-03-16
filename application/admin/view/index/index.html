@@ -1,0 +1,27 @@
+{include file="public:header" /}
+
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font">&#xe06b;</i><span>你好，{$Think.session.cms_admin_username}。</span></div>
+        </div>
+       
+        <div class="result-wrap">
+            <div class="result-title">
+                <h1>系统基本信息</h1>
+            </div>
+            <div class="result-content">
+                <ul class="sys-info-list">
+                 {volist name="server_info" id="vo"  }
+                    <li>
+                        <label class="res-lab">{$key}</label><span class="res-info">{$vo}</span>
+                    </li>
+                  {/volist}
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

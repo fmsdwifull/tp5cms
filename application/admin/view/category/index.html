@@ -1,0 +1,58 @@
+{include file="Public:header" /}
+ <script language="javascript">
+function confirm_delete() {
+	if (!confirm("确认要删除？")) {
+		window.event.returnValue = false;
+	}
+}
+</script>
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">栏目管理</span></div>
+        </div>
+       
+        <div class="result-wrap">
+                <div class="result-title">
+                       <div class="result-list">
+                        <a  href="{:url('Category/add')}"><i class="icon-font"></i>添加栏目</a>
+                        <a  href="{:url('Category/addBatch')}"><i class="icon-font"></i>批量添加栏目</a>
+                       </div>
+                </div>
+                <div class="result-content">
+                    <form action="{:url('Category/listorder')}" method="post" >
+                    <table class="result-tab" width="100%" >
+                        <tr>
+                            <th width="40">排序</th>
+                            <th>名称</th>
+                            <th width="40">属性</th>
+                            <th width="40">显示</th>
+                            <th width="230">操作</th>
+                        </tr>
+                       {volist name='list' id='vo'}
+                        <tr align="center">
+                           
+                            <td><input type="text" size="2" name="listorder[{$vo.catid}]" value="{$vo.listorder}" /></td>
+                            <td align="left">{:str_repeat("└─",$vo['level'])}<a href="{:url('Article/index',['catid'=>$vo['catid']])}">{$vo.catname} </a> [ ID:{$vo.catid} ] {if condition="$vo['ispart'] eq 0"} ( 文章：{$vo.article_number} ) {/if} </td>
+                            <td>{$vo.ispart?'<font color=red>频道</font>':'列表'}</td>
+                            <td>{$vo.ishidden?'<font color=red>隐藏</font>':'显示'}</td>
+                            <td align="right">
+                                {if condition="$vo['ispart'] eq 0"} <a href="{:url('Article/add',['catid'=>$vo['catid']])}">添加文章</a>{/if} 
+                                <a  href="{:url('Category/add',['catid'=>$vo['catid']])}">添加子栏目</a>
+                                <a  href="{$vo['url']}" target="_blank">预览</a>
+                                <a  href="{:url('Category/edit',['catid'=>$vo['catid']])}">编辑</a>
+                                <a onClick="confirm_delete()" href="{:url('Category/delete',['catid'=>$vo['catid']])}">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        <tr><td colspan="5"><input type="submit" value="排序" /></td></tr>
+                    </table>
+                    </form>
+                </div>
+            
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

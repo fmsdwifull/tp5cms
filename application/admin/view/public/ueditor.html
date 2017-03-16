@@ -1,0 +1,12 @@
+<link href="__PUBLIC__/ueditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/umeditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/umeditor.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript">      
+var um = UM.getEditor('myEditor',{ 
+		 UEDITOR_HOME_URL: "__PUBLIC__/ueditor/",
+		 imageUrl: "{:url('Upload/ueditor')}",             
+		 imagePath: "__ROOT__/",
+		 textarea: 'content' });
+</script>

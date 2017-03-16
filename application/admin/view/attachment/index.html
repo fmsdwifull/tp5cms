@@ -1,0 +1,45 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">附件管理</span></div>
+        </div>
+       
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                       <a onclick="myform.action='{:url('attachment/delete')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                    </div>
+                   
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="20"><input class="allChoose" id="check_box" onclick="selectall('id[]');" type="checkbox"></th>
+                             <th>附件</th>
+                             <th width="100">大小</th>
+                            <th width="60">操作</th>
+                        </tr>
+                        {volist name='list' id='vo'}
+                        <tr align="center">
+                            <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td>
+                            
+                            <td><a href="__ROOT__/{$vo.filepath}" target="_blank"><img src="__ROOT__/{$vo.filepath}" style="max-height:60px; max-width:200px;" /></a></td>
+                            <td>{:sizecount($vo.filesize)}</td>
+                            <td>
+                               <a class="link-del" href="{:url('attachment/delete',['id'=>$vo['id']])}">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        <tr><td colspan="9">{$page}</td></tr>
+                    </table>
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

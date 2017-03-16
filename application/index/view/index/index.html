@@ -1,0 +1,294 @@
+﻿{include file="public:header" /}
+    <!--轮播图start-->
+    <div class="wwindexbanner swiper-container-horizontal">
+        <ul class="swiper-wrapper clearfix">
+            
+            <li class="swiper-slide" mod-img="__PUBLIC__/2016/picture/banner1.jpg" pc-img="__PUBLIC__/2016/picture/banner1.jpg"><a href="javascript:;">
+                <img src="__PUBLIC__/2016/picture/banner1.jpg" /></a></li>
+            
+            <li class="swiper-slide" mod-img="__PUBLIC__/2016/picture/banner2.jpg" pc-img="__PUBLIC__/2016/picture/banner2.jpg"><a href="javascript:;">
+                <img src="__PUBLIC__/2016/picture/banner2.jpg" /></a></li>
+            
+            <li class="swiper-slide" mod-img="__PUBLIC__/2016/picture/banner3.jpg" pc-img="__PUBLIC__/2016/picture/banner3.jpg"><a href="javascript:;">
+                <img src="__PUBLIC__/2016/picture/banner3.jpg" /></a></li>
+            
+            <li class="swiper-slide" mod-img="__PUBLIC__/2016/picture/banner4.jpg" pc-img="__PUBLIC__/2016/picture/banner4.jpg"><a href="javascript:;">
+                <img src="__PUBLIC__/2016/picture/banner4.jpg" /></a></li>
+            
+            <li class="swiper-slide" mod-img="__PUBLIC__/2016/picture/banner5.jpg" pc-img="__PUBLIC__/2016/picture/banner5.jpg"><a href="javascript:;">
+                <img src="__PUBLIC__/2016/picture/banner5.jpg" /></a></li>
+            
+        </ul>
+        <div class="wwindexbannerbtn"></div>
+    </div>
+    <!--轮播图end-->
+
+
+    <!--content-->
+    <div class="wwmain">
+        <div class="wwmaincon">
+            <div class="wwindexnews indexpos">
+                <div class="web">
+                    <h3 class="wwindextit">新闻中心</h3>
+                    <ul class="clearfix">
+                        
+                       {arclist name='vo' num='4'}
+                        <li class="col-sm-6 col-lg-3">
+                            <a href="{$vo.url}">
+                                <span><img src="{$vo.thumb}" height="220" /></span>
+                                <h4>{$vo.title}</h4>
+                                <p>{$vo.description}</p>
+                            </a>
+                        </li>
+                        {/arclist}
+                        
+                    </ul>
+                    <p class="wwindexnewmore"><a href="javascript:;">了解更多</a></p>
+                </div>
+            </div>
+            <div class="wwindexpro clearfix indexpos">
+                <div class="wwinproleft">
+                    <div class="wwprolifirst">
+                        
+                        <h3><a href="javascript:;">关于我们</a></h3>
+                        <p>一女同事在办公室犯贱：“我太漂亮了，每天都被一群男人死缠着，我又很难拒绝别人，该怎么办呢？”我默默的把水杯的水泼在她的脸上。女同事恍然大悟的说：“我懂了，您是要我头脑清醒，心静如水！是吗？”我告诉她：“美不美一瓢水，卸了妆全是鬼！”</p>
+                        <a class="wwprolifirstmore" href="javascript:;">了解更多</a>
+                        
+                    </div>
+                </div>
+
+                <div class="wwinproright">
+                    <div class="wwinprodiv">
+                        {arclist name='vo' num='1'}
+                        <a href="{$vo.url}">
+                            <img src="{$vo.thumb}" width="960" height="280" /></a>
+                        <div class="wwinprodivtext">
+                            <h3><a href="{$vo.url}">{$vo.title}</a></h3>
+                            <p>{$vo.description}</p>
+                            <a class="wwprolifirstmore" href="{$vo.url}">了解更多</a>
+                        </div>
+                        {/arclist}
+                    </div>
+                    <div class="wwinprodiv wwinprodivlast swiper-container-horizontal">
+                        <ul class="swiper-wrapper">
+                            {arclist name='vo' num='4'}
+                            <li class="swiper-slide">
+                                <a href="{$vo.url}">
+                                    <img src="{$vo.thumb}" /></a>
+                                <div class="wwinprodivtext">
+                                    <h3><a href="{$vo.url}">{$vo.title}</a></h3>
+                                    <p>{$vo.description}</p>
+                                    <a class="wwprolifirstmore" href="{$vo.url}">了解更多</a>
+                                </div>
+                            </li>
+                            {/arclist}
+                           
+                            
+                        </ul>
+                        <div class="wwinprodivleft"></div>
+                        <div class="wwinprodivright"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="wwserve indexpos">
+                <h3 class="wwindextit">产品展示</h3>
+                <p class="wwindextitcopy">致力成为国际领先的、以新材料为本的行业综合服务商</p>
+                <div class="indexweb">
+                    <ul class="clearfix">
+                        
+                        {arclist name='vo' num='6'}
+                        <li class="col-md-4 col-sm-6">
+                            <a href="{$vo.url}">
+                                <span><img src="{$vo.thumb}" height="250" /></span>
+                                <h3>{$vo.title}</h3>
+                                <p>{:str_cut($vo.description,80)}</p>
+                            </a>
+                        </li>
+                           {/arclist}
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="wwinnovate indexpos">
+                <h3 class="wwindextit">形象展示</h3>
+                <div class="indexweb clearfix">
+                    <div class="wwinnoleft col-md-6">
+                        <div class="wwinnoleftdiv swiper-container-horizontal">
+                            <ul class="swiper-wrapper clearfix">
+
+                                <!--轮播图 start-->
+                                 {arclist name='vo' num='5'}
+                                <li class="swiper-slide"><a href="{$vo.url}">
+                                    <img src="{$vo.thumb}" width="630" height="456" /></a></li>
+                                 {/arclist}
+                               
+                                <!--轮播图 end-->
+                            </ul>
+                            <div class="wwinprodivleft"></div>
+                            <div class="wwinprodivright"></div>
+                        </div>
+                    </div>
+                    <div class="wwinnoright col-md-6">
+                        <ul class="clearfix swiper-wrapper">
+                             {arclist name='vo' num='4'}
+                            <li class="col-md-6 swiper-slide">
+                                <a href="{$vo.url}">
+                                    <span><img src="{$vo.thumb}" height="220" /></span>
+                                    <p>{$vo.title}<span></span></p>
+                                </a>
+                            </li>
+                             {/arclist}
+                            
+                            
+                        </ul>
+                        <div class="wwinprodivleft"></div>
+                        <div class="wwinprodivright"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wwindexhd clearfix indexpos">
+                <div class="wwindexhdleft swiper-container-horizontal">
+                    <ul class="clearfix swiper-wrapper">
+                         {arclist name='vo' num='4'}
+                        <li class="swiper-slide"><a href="javascript:;">
+                            <img src="{$vo.thumb}" height="437" /></a></li>
+                          {/arclist}
+                        
+                    </ul>
+                    <div class="wwinprodivleft"></div>
+                    <div class="wwinprodivright"></div>
+                </div>
+                <div class="wwindexhdright">
+                    
+                    <h3><a href="javascript:;">企业文化</a></h3>
+                    <ul>
+                        {arclist name='vo' num='6'}
+                        <li><a href="{$vo.url}">{$vo.title}</a></li>
+                         {/arclist}
+                       
+                    </ul>
+                    <p class="wwindexpage"><a class="wwpage" href="javascript:;"><span>了解更多</span></a></p>
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <div class="wwindexhonor indexpos">
+                <ul class="clearfix">
+                    
+                    <li class="col-md-3 col-xs-6">
+                        <a href="javascript:;">
+                            <h3>公司概况</h3>
+                            <img src="__PUBLIC__/2016/picture/wwpic192.jpg" />
+                            <p>公司成立于2015年12月</p>
+                        </a>
+                    </li>
+                    
+                    <li class="col-md-3 col-xs-6">
+                        <a href="javascript:;">
+                            <h3>荣誉资质</h3>
+                            <img src="__PUBLIC__/2016/picture/wwpic193.jpg" />
+                            <p>国家级高新技术企业</p>
+                        </a>
+                    </li>
+                    
+                    <li class="col-md-3 col-xs-6">
+                        <a href="javascript:;">
+                            <h3>企业文化</h3>
+                            <img src="__PUBLIC__/2016/picture/wwpic194.jpg" />
+                            <p>创新立足全球市场</p>
+                        </a>
+                    </li>
+                    
+                    <li class="col-md-3 col-xs-6">
+                        <a href="javascript:;">
+                            <h3>联系我们</h3>
+                            <img src="__PUBLIC__/2016/picture/wwpic195.jpg" />
+                            <p>企业热线：10086</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--content-->
+
+    
+<!--footer-->
+
+{include file="public:footer" /}
+
+<!---footer end-->
+<script src="__PUBLIC__/2016/js/jquery-1.12.2.min.js"></script>
+<script src="__PUBLIC__/2016/js/idangerous.swiper.min.js"></script>
+<script src="__PUBLIC__/2016/js/layout.js"></script>
+
+<div class="rightmenu">
+        <div class="ico-box ico01 wwico-box">
+            <a href="javascript:;" class="ico-cont ico-cont01">新闻中心</a>
+        </div>
+        <div class="ico-box ico02 wwico-box">
+            <a href="javascript:;" class="ico-cont ico-cont02">关于我们</a>
+        </div>
+        <div class="ico-box ico03 wwico-box">
+            <a href="javascript:;" class="ico-cont ico-cont03">产品展示</a>
+        </div>
+        <div class="ico-box ico04 wwico-box">
+            <a href="javascript:;" class="ico-cont ico-cont04">形象展示</a>
+        </div>
+        <div class="ico-box ico05 wwico-box">
+            <a href="javascript:;" class="ico-cont ico-cont05">企业文化</a>
+        </div>
+        <div class="ico-box ico06 backtop"></div>
+</div>
+ <script>
+       
+		$(function () {
+
+
+    //-------- 导航 --------
+
+
+    //-------- 判断分辨率 --------
+
+    $(window).resize(function () {
+
+    })
+
+    $(window).load(function () {
+        positioncont2();
+        $(window).resize(function () {
+            positioncont2();
+        })
+    })
+
+    function positioncont2() {
+
+        var overflowwid2 = $("body").css("overflow", "hidden").width();
+        var windowwid2 = $("body").removeAttr("style").width();
+        var scrollwid2 = overflowwid2 - windowwid2;
+		
+		if (windowwid2 + scrollwid2 > 991) {
+            $('.rightmenuin').addClass('rightmenuins')
+			$('.rightmenu').show();
+        }
+        else {
+            $('.rightmenuin').removeClass('rightmenuins')
+			$('.rightmenu').hide();
+        };
+		
+		
+	}
+	
+	})	
+    </script>
+</body>
+</html>

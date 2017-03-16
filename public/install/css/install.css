@@ -1,0 +1,94 @@
+
+/*头部样式*/
+.header{
+	height:80px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 80px;
+}
+
+.left{
+	background:#00A65A;
+	border-radius: 4px;
+	width:100%;
+	height:420px;
+	color: #fff;
+}
+.left div{
+	height: 30px;
+	margin-top:15px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+}
+.left .title{
+	margin-top: 0;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding-left:10px;
+	border-bottom: #ccc 1px solid;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+
+ .right{
+	overflow-y:auto;
+	background: #fff;
+	height:420px;
+}
+ .right label{
+ 	color:#666;
+ }
+.left .active{
+	color:yellow;
+	font-weight: bold;
+	background: url(../images/right.png) no-repeat 150px center;
+	background-size: 20px;
+}
+
+
+/*底部样式*/
+.footer{
+	text-align: center;
+	margin-top: 10px;
+	height:40px;
+	line-height: 40px;
+}
+
+
+.green{
+	color:green;
+}
+.red{
+	color:red;
+}
+
+.success1{
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 100px;
+	color:#00A8CD;
+}
+.success2{
+	font-size: 16px;
+	margin-top:20px;
+	text-align: center;
+}
+.success3{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+

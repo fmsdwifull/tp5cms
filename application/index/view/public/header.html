@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,minimal-ui,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>{$seo['title']}</title>
+<meta name="keywords" content="{$seo['keywords']}">
+<meta name="description" content="{$seo['description']}">
+<link href="__PUBLIC__/2016/css/common.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/2016/css/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="zheaderposition">
+  <div class="zheadercont">
+    <div class="web clearfix">
+      <div class="wwheadrightbox">
+        <div class="wheadrighttop clearfix">
+          <a class="wwphnavicon" href="javascript:;"></a>
+          <a class="wwsearchph" href="javascript:;"></a>
+          
+          <!--搜索start-->
+          <div class="wwsearch hidden-sm">
+            <div class="wwsearchcon">
+            <form action="__ROOT__/index.php/Search/index.html" method="get">
+              <input class="wwsearchtext" name="q" type="text" value="" />
+              <input class="wwsearchbut" type="submit" value="" />
+              </form>
+            </div>
+          </div>
+          <!--搜索 end-->
+         
+        </div>
+        <!-- 头部栏目 start-->
+        <div class="wwnav clearfix">
+          <ul class="clearfix">
+            <li>
+              <h3 class="yjchan">
+                <a href="__ROOT__">首页</a>
+              </h3>
+            </li>
+           
+           {category name='vo'  num='6'}
+            <li>
+              <h3 class="yjchan">
+                <a href="{$vo.url}">{$vo.catname}</a>
+                <span></span>
+              </h3>
+              <div class="wwnavlist">
+               
+                
+                <div class="wwnavdrop">
+                  <h4><a href="javascript:;">栏目二</a></h4>
+                  <div class="wwnavdroplist">
+                    <ul>
+                      
+                      <li><h5><a href="javascript:;">栏目二二</a></h5></li>
+                      <li><h5><a href="javascript:;">栏目二二</a></h5></li>
+                      <li><h5><a href="javascript:;">栏目二二</a></h5></li>
+                      <li><h5><a href="javascript:;">栏目二二</a></h5></li>
+                     
+                    </ul>
+                  </div>
+                 
+                </div>
+                
+                
+                <div class="wwnavdrop">
+                  <h4><a href="javascript:;">栏目三</a></h4>
+                  <div class="wwnavdroplist">
+                    <ul>
+                      
+                      <li><h5><a href="javascript:;">栏目三三</a></h5></li>
+                       <li><h5><a href="javascript:;">栏目三三</a></h5></li>
+                      
+                    </ul>
+                  </div>
+                 
+                </div>
+               
+              </div>
+            </li>
+            {/category}
+           
+            
+          </ul>
+        </div>
+        <!-- 头部栏目 end-->
+      </div>
+      <a class="wwlogo" href="__ROOT__">
+        <img src="__PUBLIC__/2016/picture/logo.jpg" />
+      </a>
+     
+    </div>
+  </div>
+</div>
+

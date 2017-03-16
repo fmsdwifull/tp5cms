@@ -1,0 +1,49 @@
+{include file="public:header" /}
+
+
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">TAG管理</span></div>
+        </div>
+       
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a  onclick="myform.action='{:url('Tag/delete')}';myform.submit();" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
+                        
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" id="check_box" onclick="selectall('tagid[]');" type="checkbox"></th>
+                            <th>TAG</th>
+                            <th width="100">点击</th>
+                            <th width="100">文章</th>
+                            <th width="100">操作</th>
+                        </tr>
+                       {foreach name="tag_list" id='vo'}
+                        <tr>
+                            <td class="tc"><input name="tagid[]" value="{$vo.tagid}" type="checkbox"></td>
+                            <td><a href="__ROOT__/index.php/Tag/show.html?tag={$vo.tag|urlencode}" target="_blank">{$vo.tag}</a></td>
+                            <td align="center">{$vo.hits}</td>
+                            <td align="center">{$vo.count}</td>
+                            <td align="center">
+                                <a class="link-del" href="{:url('Tag/delete',['tagid'=>$vo['tagid']])}">删除</a>
+                            </td>
+                        </tr>
+                        {/foreach}
+                       
+                    </table>
+                    <tr><td colspan="3">{$page}</td></tr>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+  
+</div>
+</body>
+</html>

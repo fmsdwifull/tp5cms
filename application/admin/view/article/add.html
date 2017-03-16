@@ -1,0 +1,73 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:url('Article/index')}">文章管理</a><span class="crumb-step">&gt;</span><span>添加文章</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('Article/insert')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%" border="1">
+                        <tbody>
+                       
+                            <tr>
+                                <th>栏目：</th>
+                                <td>
+                                    {volist name='list' id='vo'}
+                                    <input name="catid[]" {if condition="$vo['catid'] eq $catid"}checked="checked"{/if} value="{$vo.catid}" type="checkbox">&nbsp;{$vo.catname}
+                                    {/volist}
+                                    ( 全选&nbsp;<input  id="check_box" onclick="selectall('catid[]');" type="checkbox"> )
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>标题：</th>
+                                <td>
+                                    <input class="common-text" id="title" name="title" onBlur="$.post('{:url('Article/get_keywords')}?number=3&sid='+Math.random()*5, {data:$('#title').val()}, function(data){if(data && $('#keywords').val()=='') $('#keywords').val(data); })" style=" width:800px;" type="text" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>关键词：</th>
+                                <td>
+                                    <input class="common-text" id="keywords" name="keywords" style=" width:400px;" type="text">多关键词之间用空格或者“,”隔开
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>缩略图：</th>
+                                <td>
+                                 <div style=" margin-top:10px;">
+                                    <div id="uploadimg">
+                                        <div id="fileList" class="uploader-list" style="width: 100%; overflow: hidden;"></div>
+                                        <div id="imgPicker">选择图片</div>
+                                    </div>
+                                </div>
+                                <input id="select_picture" hidden="hidden" type="text" name="thumb"/>
+                                {include file="public:upload" /}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>描述：</th>
+                                <td><textarea name="description" class="common-textarea" id="description" style="width:800px; height:100px" ></textarea></td>
+                            </tr>
+                           <tr>
+                                <th>内容：</th>
+                                <td style="padding-top:10px;"><script type="text/plain" id="myEditor"  style=" width:805px;height:200px;"></script></td>
+                            </tr>
+                            {include file="public:ueditor" /}
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary  mr10"  value="保存后自动关闭" name="dosubmit"  type="submit">
+                                    <input class="btn btn-primary  mr10"  value="保存并继续发表" name="dosubmit_continue" type="submit">
+                                    <input class="btn" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

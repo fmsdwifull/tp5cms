@@ -1,0 +1,46 @@
+{include file="public:header" /}
+<div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:url('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span>系统设置</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:url('System/set')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                        
+                            <tr>
+                                <th>网站标题：</th>
+                                <td>
+                                    <input class="common-text" id="title" name="title" style=" width:800px;" value="{$detail.title}" type="text">
+                                </td>
+                            </tr>
+                           <tr>
+                                <th>网站关键词：</th>
+                                <td>
+                                    <input class="common-text" id="keywords" name="keywords" style=" width:800px;" value="{$detail.keywords}" type="text">
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <th>网站描述：</th>
+                                <td><textarea name="description" class="common-textarea" id="description" style="width:800px; height:200px" >{$detail.description}</textarea></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10"  value="提交" type="submit">
+                                    <input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
