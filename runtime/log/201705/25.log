@@ -1,0 +1,1059 @@
+[ 2017-05-25T14:05:04+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/common/cache.html
+[ log ] 192.168.199.192/tp5cms/admin.php/common/cache.html [运行时间：0.053195s][吞吐率：18.80req/s] [内存消耗：1,274.55kb] [文件加载：36]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'common',
+    2 => 'cache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Common->cache[ /var/www/html/tp5cms/application/admin/controller/Common.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:05:05+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/system/set.html
+[ log ] 192.168.199.192/tp5cms/admin.php/system/set.html [运行时间：0.076791s][吞吐率：13.02req/s] [内存消耗：1,938.33kb] [文件加载：43]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/common/cache.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ /var/www/html/tp5cms/application/admin/controller/System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/system/set.html [ array (
+  0 => 'detail',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:05:13+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/index/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/index/index.html [运行时间：0.015997s][吞吐率：62.51req/s] [内存消耗：1,399.06kb] [文件加载：37]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/html/tp5cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/index/index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:05:15+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.062758s][吞吐率：15.93req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:13+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.053643s][吞吐率：18.64req/s] [内存消耗：1,823.33kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:20+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/index/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/index/index.html [运行时间：0.014811s][吞吐率：67.52req/s] [内存消耗：1,186.28kb] [文件加载：34]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/html/tp5cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/index/index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:22+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.045020s][吞吐率：22.21req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:26+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/index/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/index/index.html [运行时间：0.014245s][吞吐率：70.20req/s] [内存消耗：1,186.28kb] [文件加载：34]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/html/tp5cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/index/index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:27+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/attachment/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/attachment/index.html [运行时间：0.069888s][吞吐率：14.31req/s] [内存消耗：2,258.43kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'attachment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Attachment->index[ /var/www/html/tp5cms/application/admin/controller/Attachment.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/attachment/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:29+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.033417s][吞吐率：29.92req/s] [内存消耗：1,823.29kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/attachment/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:31+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/attachment/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/attachment/index.html [运行时间：0.064161s][吞吐率：15.59req/s] [内存消耗：2,108.20kb] [文件加载：44]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'attachment',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Attachment->index[ /var/www/html/tp5cms/application/admin/controller/Attachment.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/attachment/index.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:32+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/article/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/article/index.html [运行时间：0.060676s][吞吐率：16.48req/s] [内存消耗：2,206.97kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/attachment/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ /var/www/html/tp5cms/application/admin/controller/Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/article/index.html [ array (
+  0 => 'q',
+  1 => 'catid',
+  2 => 'article_list',
+  3 => 'cate_list',
+  4 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:36+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/article/add.html
+[ log ] 192.168.199.192/tp5cms/admin.php/article/add.html [运行时间：0.079957s][吞吐率：12.51req/s] [内存消耗：2,012.29kb] [文件加载：43]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/article/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->add[ /var/www/html/tp5cms/application/admin/controller/Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/article/add.html [ array (
+  0 => 'list',
+  1 => 'catid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:06:38+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.082824s][吞吐率：12.07req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/article/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:08:19+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/article/add.html
+[ log ] 192.168.199.192/tp5cms/admin.php/article/add.html [运行时间：0.231657s][吞吐率：4.32req/s] [内存消耗：1,852.63kb] [文件加载：40]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/article/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->add[ /var/www/html/tp5cms/application/admin/controller/Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/article/add.html [ array (
+  0 => 'list',
+  1 => 'catid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:08:40+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.045407s][吞吐率：22.02req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/article/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:15:40+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/article/add.html
+[ log ] 192.168.199.192/tp5cms/admin.php/article/add.html [运行时间：0.046055s][吞吐率：21.71req/s] [内存消耗：1,852.47kb] [文件加载：40]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->add[ /var/www/html/tp5cms/application/admin/controller/Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/article/add.html [ array (
+  0 => 'list',
+  1 => 'catid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:15:45+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/index/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/index/index.html [运行时间：0.019610s][吞吐率：50.99req/s] [内存消耗：1,186.28kb] [文件加载：34]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/article/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /var/www/html/tp5cms/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/index/index.html [ array (
+  0 => 'server_info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:15:47+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/
+[ log ] 192.168.199.192/tp5cms/ [运行时间：0.119593s][吞吐率：8.36req/s] [内存消耗：2,502.30kb] [文件加载：42]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/html/tp5cms/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/index/view/index/index.html [ array (
+  0 => 'seo',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:15:58+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/system/set.html
+[ log ] 192.168.199.192/tp5cms/admin.php/system/set.html [运行时间：0.021748s][吞吐率：45.98req/s] [内存消耗：1,788.05kb] [文件加载：40]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ /var/www/html/tp5cms/application/admin/controller/System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/system/set.html [ array (
+  0 => 'detail',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:16:12+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.068529s][吞吐率：14.59req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:16:14+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/system/set.html
+[ log ] 192.168.199.192/tp5cms/admin.php/system/set.html [运行时间：0.021943s][吞吐率：45.57req/s] [内存消耗：1,788.05kb] [文件加载：40]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ /var/www/html/tp5cms/application/admin/controller/System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/system/set.html [ array (
+  0 => 'detail',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-25T14:16:55+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/category/index.html
+[ log ] 192.168.199.192/tp5cms/admin.php/category/index.html [运行时间：0.030096s][吞吐率：33.23req/s] [内存消耗：1,823.16kb] [文件加载：41]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/system/set.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Category->index[ /var/www/html/tp5cms/application/admin/controller/Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/category/index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/var/www/html/tp5cms/application/admin/view/Public/header.html[/var/www/html/tp5cms/thinkphp/library/think/Template.php:1079]
+
+---------------------------------------------------------------
+[ 2017-05-25T14:16:57+08:00 ] 192.168.199.192 192.168.199.207 GET /tp5cms/admin.php/system/set.html
+[ log ] 192.168.199.192/tp5cms/admin.php/system/set.html [运行时间：0.068235s][吞吐率：14.66req/s] [内存消耗：1,788.05kb] [文件加载：40]
+[ info ] [ LANG ] /var/www/html/tp5cms/thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'system',
+    2 => 'set',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'BJYADMIN=0p5oe9nn8p80e6ap60l1mci726; PHPSESSID=vhp3ut6c9fhdooqb78j1lo3kd3',
+  'referer' => 'http://192.168.199.192/tp5cms/admin.php/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => '192.168.199.192',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->set[ /var/www/html/tp5cms/application/admin/controller/System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/tp5cms/application/admin/view/system/set.html [ array (
+  0 => 'detail',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
